@@ -14,6 +14,7 @@ import traceback
 from colorama import Fore, Back, Style
 import sys
 import requests
+import aiofiles
 
 
 intents = discord.Intents.all()
