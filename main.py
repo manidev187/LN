@@ -21,8 +21,8 @@ intents = discord.Intents.all()
 intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 bot.remove_command("help")
-token = '' # Token Einfügen
-logo = "logoattachmmentlink"
+token = ''
+logo = "logodclink"
 
 # Cogs
 if __name__ == '__main__':
@@ -35,13 +35,13 @@ if __name__ == '__main__':
             traceback.print_exc()
 
 # IDS           
-GUILD_ID = 0
-TICKET_CHANNEL = 0
-CATEGORY_ID = 0
-TEAM_ROLE = 0
-LOG_CHANNEL = 0
-role_id = 0
-guild_id = 0
+GUILD_ID = 0 #Server ID
+TICKET_CHANNEL = 0 # Channel ID Für Ticket Embed
+CATEGORY_ID = 0 # Kategorie ID Wo Die Tickets Hin sollen
+TEAM_ROLE = 0 # Team Acces Role
+LOG_CHANNEL = 0 # Transcripts Channel
+role_id = 0 #Role ID 
+guild_id = 0 # Server ID
 
 # Verify Bot
 
