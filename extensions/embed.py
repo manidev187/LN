@@ -20,14 +20,9 @@ class price(commands.Cog):
             await ctx.send("Bitte gib einen User an!")
         else:
             await member.add_roles(discord.utils.get(ctx.guild.roles, name="Prices"))
-            channel = self.bot.get_channel(953000070482128978)
+            channel = self.bot.get_channel(ß)
             await channel.send(f"{member.mention} hat die Rechte erhalten!", delete_after=10)
             await member.send("Du wurdest erfolgreich zu den <#953000070482128978> hinzugefügt!")
-
-
-
-
-
 
 
 def setup(bot):

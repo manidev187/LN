@@ -13,18 +13,11 @@ class apps(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print('* Die Erweiterung \'apps\' wurde erfolgreich eingebunden...')
-
-
-    
-    @user_command(name=f"hallo", guild=[942460979961270293]) # Der Name von deiner App. Bei Bedarf auch die Guild einfügen.
-    async def App(ctx, message: discord.Member): # Selbsterklärend.
-        await ctx.respond(f"{message.mention} hi", ephemeral=True)
-
         
-
-
-
-
+         
+    @user_command(name=f"hallo", guild=[942460979961270293]) 
+    async def App(ctx, message: discord.Member): 
+        await ctx.respond(f"{message.mention} hi", ephemeral=True)
 
 def setup(bot):
     bot.add_cog(apps(bot))

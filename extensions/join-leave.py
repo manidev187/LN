@@ -50,10 +50,7 @@ class joinleave(commands.Cog):
                     return len(channel2.members) == 0
                 await self.bot.wait_for('voice_state_update', check=check)
                 await channel2.delete()
-
-
-
-    
+   
 
 
 def setup(bot):

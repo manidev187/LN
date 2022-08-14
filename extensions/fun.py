@@ -92,8 +92,6 @@ class fun(commands.Cog):
         await ctx.send(f"Die Mitglieder des Servers sind: {ctx.guild.members}")
 
 
-
-
     
 def setup(bot):
     bot.add_cog(fun(bot))

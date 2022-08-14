@@ -21,7 +21,7 @@ class Dropdown(discord.ui.Select):
             min_values=1,
             max_values=1,
             options=options)
-    # when the user interacts with the selectmenu
+
     async def callback(self, interaction: discord.Interaction):
         self.bot.reload_extension(f"extensions.{self.values[0]}")
         print(1)
@@ -38,7 +38,7 @@ class DropdownView(discord.ui.View):
 class Settings(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    @slash_command(name="reload", guild_ids=[942460979961270293])
+    @slash_command(name="reload", guild_ids=[0])
     @commands.has_permissions(administrator=True)
 
     async def _reload(self, i: discord.Interaction):

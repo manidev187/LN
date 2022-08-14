@@ -23,10 +23,5 @@ class giveaway(commands.Cog):
         await ctx.send(f"Ends: <t:{int(time_final)}:R>")
 
 
-
-
-
-
-
 def setup(bot):
     bot.add_cog(giveaway(bot))
